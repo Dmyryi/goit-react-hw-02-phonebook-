@@ -8,7 +8,7 @@ export default class PhoneBookForm extends Component {
   };
 
   handleChange = evt => {
-    const { name, number } = evt.currentTarget;
+    const { name } = evt.currentTarget;
     this.setState({ [name]: evt.currentTarget.value });
   };
 
@@ -26,7 +26,7 @@ export default class PhoneBookForm extends Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit}>
-        <label>
+        <label class={styles.label}>
           Name
           <input
             type="text"
@@ -36,7 +36,7 @@ export default class PhoneBookForm extends Component {
             required
           />
         </label>
-        <label>
+        <label class={styles.label}>
           Number
           <input
             type="tel    "

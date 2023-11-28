@@ -1,4 +1,4 @@
-label {
+.label {
     display: flex;
     flex-direction: column;
     max-width: 200px;
@@ -17,5 +17,3 @@ button:hover {
     color: #0a0131ab;
     border-color: #0a0131ab;
 }
-
-.contactform {}
